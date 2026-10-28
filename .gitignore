@@ -1,0 +1,8 @@
+*.pdb
+*.exe
+*.zip
+.vs/
+obj/
+bin/
+test-results.txt
+SHA256SUMS.txt
