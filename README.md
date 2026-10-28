@@ -42,6 +42,7 @@ if ($p.ExitCode -ne 0) { throw 'Tests failed' }
 
 ## 实现
 
-C# / Windows Forms，使用自定义 JSON 解析器保留数字原文。主入口和界面位于 `MyTool.cs`。
+C# / WPF，使用自定义 JSON 解析器保留数字原文。JSON 解析与测试位于 `MyTool.cs`，界面布局位于 `Shell.xaml`，交互逻辑位于 `Desktop.cs`。
 
 当前版本在界面线程处理 JSON，适合日常文本；非常大的文件可能暂时阻塞界面。
+
