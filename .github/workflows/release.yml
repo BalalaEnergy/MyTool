@@ -34,8 +34,9 @@ jobs:
         run: |
           gh release view $env:GITHUB_REF_NAME
           if ($LASTEXITCODE -ne 0) {
-            gh release create $env:GITHUB_REF_NAME --title "MyTool $env:GITHUB_REF_NAME" --notes 'Windows 个人工具箱：JSON 格式化与 JSON Diff。下载 MyTool.exe 即可运行。'
+            gh release create $env:GITHUB_REF_NAME --title "MyTool $env:GITHUB_REF_NAME" --notes 'Windows 个人工具箱：JSON 格式化、JSON 高亮比对、文本比对和接口导入 YApi。下载 MyTool.exe 即可运行。'
             if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
           }
           gh release upload $env:GITHUB_REF_NAME MyTool.exe SHA256SUMS.txt --clobber
           if ($LASTEXITCODE -ne 0) { throw 'Release upload failed' }
+

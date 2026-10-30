@@ -6,3 +6,9 @@ obj/
 bin/
 test-results.txt
 SHA256SUMS.txt
+
+scan-check.txt
+yapi-projects.json
+*.dpapi
+scan-preview.json
+upload-check.txt
